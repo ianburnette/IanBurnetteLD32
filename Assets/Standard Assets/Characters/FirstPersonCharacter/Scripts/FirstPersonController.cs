@@ -42,6 +42,8 @@ namespace UnityStandardAssets.Characters.FirstPerson
         private bool m_Jumping;
         private AudioSource m_AudioSource;
 
+		private bool playFootsteps = true;
+
         // Use this for initialization
         private void Start()
         {
@@ -60,6 +62,7 @@ namespace UnityStandardAssets.Characters.FirstPerson
 		public void Falling(){
 			m_MouseLook.XSensitivity = .2f;
 			m_MouseLook.YSensitivity = .2f;
+			m_WalkSpeed = 0f;
 		}
         // Update is called once per frame
         private void Update()
@@ -89,9 +92,11 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void PlayLandingSound()
         {
-            m_AudioSource.clip = m_LandSound;
-            m_AudioSource.Play();
-            m_NextStep = m_StepCycle + .5f;
+			if (playFootsteps) {
+				m_AudioSource.clip = m_LandSound;
+				m_AudioSource.Play ();
+				m_NextStep = m_StepCycle + .5f;
+			}
         }
 
 
@@ -137,8 +142,10 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
         private void PlayJumpSound()
         {
-            m_AudioSource.clip = m_JumpSound;
-            m_AudioSource.Play();
+			if (playFootsteps) {
+			m_AudioSource.clip = m_JumpSound;
+			m_AudioSource.Play ();
+			}
         }
 
 
@@ -157,9 +164,14 @@ namespace UnityStandardAssets.Characters.FirstPerson
 
             m_NextStep = m_StepCycle + m_StepInterval;
 
-            PlayFootStepAudio();
+			if (playFootsteps) {
+				PlayFootStepAudio ();
+			}
         }
 
+		public void StopFootSteps(){
+			playFootsteps = false;
+		}
 
         private void PlayFootStepAudio()
         {

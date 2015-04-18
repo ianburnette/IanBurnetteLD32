@@ -1,11 +1,20 @@
 fileFormatVersion: 2
 guid: 681ed2621f2c763458c28a0b1c7f21bf
-timeCreated: 1429375146
+timeCreated: 1429380515
 licenseType: Free
 TextureImporter:
   fileIDToRecycleName:
     21300000: 32x32 character sketches_0
     21300002: 32x32 character sketches_1
+    21300004: 32x32 character sketches_2
+    21300006: 32x32 character sketches_3
+    21300008: 32x32 character sketches_4
+    21300010: 32x32 character sketches_5
+    21300012: 32x32 character sketches_6
+    21300014: 32x32 character sketches_7
+    21300016: 32x32 character sketches_8
+    21300018: 32x32 character sketches_9
+    21300020: 32x32 character sketches_10
   serializedVersion: 2
   mipmaps:
     mipMapMode: 0
@@ -64,12 +73,102 @@ TextureImporter:
     - name: 32x32 character sketches_1
       rect:
         serializedVersion: 2
+        x: 32
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_3
+      rect:
+        serializedVersion: 2
         x: 0
         y: 96
         width: 32
         height: 31
       alignment: 0
       pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_4
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_5
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_6
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 62
+        width: 32
+        height: 33
+      alignment: 0
+      pivot: {x: .5, y: .5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_7
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_8
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_9
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+    - name: 32x32 character sketches_10
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 32
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
   spritePackingTag: 
   userData: 
