@@ -19,7 +19,7 @@ public class teleport : MonoBehaviour {
 
 	// Update is called once per frame
 	public void Teleport () {
-		spiralStaircase.position += offset;
+		//spiralStaircase.position += offset;
 		player.transform.position += offset;
 	}
 }

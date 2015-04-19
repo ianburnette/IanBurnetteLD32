@@ -36,6 +36,7 @@ public class CameraFacingBillboard : MonoBehaviour
 		// if no camera referenced, grab the main camera
 		if (!referenceCamera)
 			referenceCamera = Camera.main.transform; 
+		//InvokeRepeating ("UpdateSelf", 0, Random.Range (2f,2.5f));
 	}
 	
 	void  Update ()
