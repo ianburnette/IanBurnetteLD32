@@ -11,6 +11,7 @@ public class interact : MonoBehaviour {
 	public string interactString;
 	public Transform objectToChange;
 	public Transform playerTransform;
+	public Transform guardsToCall;
 
 	// Use this for initialization
 	void Start () {
@@ -38,6 +39,7 @@ public class interact : MonoBehaviour {
 			playerTransform.GetComponent<FirstPersonController> ().Falling ();
 			playerTransform.GetComponent<endingScenario> ().ReachedEnd (endingClip);
 		} else {
+			guardsToCall.gameObject.SetActive (true);
 			playerTransform.GetComponent<FirstPersonController> ().StopFootSteps ();
 			playerTransform.GetComponent<endingScenario> ().ReachedEnd (endingClip);
 			playerTransform.GetComponent<endingScenario> ().PlacedBomb();
