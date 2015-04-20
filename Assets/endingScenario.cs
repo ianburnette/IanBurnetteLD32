@@ -13,21 +13,30 @@ public class endingScenario : MonoBehaviour {
 	public bool fadeNow;
 	public float increment;
 	public Transform guards;
+	public pauseMenu psmnu;
 
 	// Use this for initialization
 	void Update () {
 		if (listenForEnd && !thisSource.isPlaying) {
-			print ("finished");
+//			print ("finished");
 			Application.LoadLevel(Application.loadedLevel+1);
 		}
 		if (fadeNow) {
-			print (thisSource.clip.length);
-			float timeOfClip = thisSource.clip.length;
+			//print (thisSource.clip.length);
+			float timeOfClip;
+			if (thisSource.clip != null){
+				 timeOfClip = thisSource.clip.length;
+			}else{
+				timeOfClip = 3f;
+			}
 			increment = 1f/timeOfClip;
 			InvokeRepeating("FadeIncrement", 0, 1f);
 			fadeScreen.color = new Color(0,0,0,fadeScreen.color.a + (increment * Time.deltaTime));
 		
 			//fadeScreen.color = new Color(0,0,0,1f);
+		}
+		if (listenForEnd) {
+			psmnu.ending = true;
 		}
 	}
 

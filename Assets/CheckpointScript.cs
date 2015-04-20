@@ -16,10 +16,12 @@ public class CheckpointScript : MonoBehaviour {
 	}
 
 	// Update is called once per frame
-	void OnLevelWasLoaded() {
-		checkpointSetter = GameObject.FindGameObjectWithTag ("CheckpointSetter").transform;
-		if (currentCheckpoint != 3) {
-			checkpointSetter.GetComponent<checkpointSetter>().Checkpoint(currentCheckpoint);
+	void OnLevelWasLoaded(int level) {
+		if (level == 1) {
+			checkpointSetter = GameObject.FindGameObjectWithTag ("CheckpointSetter").transform;
+			if (currentCheckpoint != 3) {
+				checkpointSetter.GetComponent<checkpointSetter> ().Checkpoint (currentCheckpoint);
+			}
 		}
 	}
 }

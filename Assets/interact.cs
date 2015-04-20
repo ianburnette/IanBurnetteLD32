@@ -37,6 +37,7 @@ public class interact : MonoBehaviour {
 	void SendMessageToPlayer(){
 		if (transform.name != "placeBomb") {
 			playerTransform.GetComponent<FirstPersonController> ().Falling ();
+			playerTransform.GetComponent<FirstPersonController> ().StopFootSteps ();
 			playerTransform.GetComponent<endingScenario> ().ReachedEnd (endingClip);
 		} else {
 			guardsToCall.gameObject.SetActive (true);

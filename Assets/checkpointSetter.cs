@@ -7,6 +7,7 @@ public class checkpointSetter : MonoBehaviour {
 
 	public Transform player, hallway, tower, throneRoom, fade;
 	public FirstPersonController controller;
+	public bool debug;
 
 	// Use this for initialization
 	void Start () {
@@ -14,6 +15,8 @@ public class checkpointSetter : MonoBehaviour {
 	}
 
 	public void Checkpoint(int check){
+		AudioListener.volume = 0.5f;
+		//GameObject.Find ("_gm").GetComponent<audioManager> ().masterAudio = .5f;
 		if (check == 0) {
 			player.position = hallway.position;
 			player.rotation = hallway.rotation;
@@ -34,14 +37,17 @@ public class checkpointSetter : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Input.GetKeyDown (KeyCode.Alpha0)) {
-			Checkpoint (0);
-		}
-		if (Input.GetKeyDown (KeyCode.Alpha1)) {
-			Checkpoint (1);
-		}
-		if (Input.GetKeyDown (KeyCode.Alpha2)) {
-			Checkpoint (2);
+		AudioListener.volume = 0.5f;
+		if (debug) {
+			if (Input.GetKeyDown (KeyCode.Alpha0)) {
+				Checkpoint (0);
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha1)) {
+				Checkpoint (1);
+			}
+			if (Input.GetKeyDown (KeyCode.Alpha2)) {
+				Checkpoint (2);
+			}
 		}
 	}
 }

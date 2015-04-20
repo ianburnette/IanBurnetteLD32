@@ -10,6 +10,7 @@ public class pauseMenu : MonoBehaviour {
 	public FirstPersonController controller;
 	public Texture2D tex;
 	public Slider volSlider;
+	public bool ending;
 
 	public GameObject pauseCanvas, main, sureQuit, sureRestart, sound;
 
@@ -18,6 +19,12 @@ public class pauseMenu : MonoBehaviour {
 		Time.timeScale = 1f;
 		Cursor.visible = false;
 		Cursor.lockState = CursorLockMode.Locked;
+	}
+
+	void OnLevelWasLoaded(int level){
+		if (level == 1) {
+			ending = false;
+		}
 	}
 	
 	// Update is called once per frame
@@ -31,8 +38,8 @@ public class pauseMenu : MonoBehaviour {
 //			Cursor.SetCursor(tex);
 			Cursor.lockState = CursorLockMode.Locked;
 		}
-		if (Input.GetButtonDown ("Fire2")) {
-			print ("pressed");
+		if (Input.GetButtonDown ("Fire2") && !ending) {
+			//print ("pressed");
 			if (paused){
 				Unpause();
 			}else{
@@ -42,6 +49,7 @@ public class pauseMenu : MonoBehaviour {
 	}
 
 	void Pause(){
+
 		Time.timeScale = 0f;
 		Cursor.visible = true;
 		Cursor.lockState = CursorLockMode.None;

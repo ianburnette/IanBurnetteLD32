@@ -1,0 +1,22 @@
+Initialize engine version: 5.0.0f4 (5b98b70ebeb9)
+GfxDevice: creating device client; threaded=1
+Direct3D:
+    Version:  Direct3D 11.0 [level 11.0]
+    Renderer: NVIDIA GeForce GTX 560 Ti   (ID=0x1200)
+    Vendor:   NVIDIA
+    VRAM:     977 MB
+Begin MonoManager ReloadAssembly
+Platform assembly: E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\UnityEngine.dll (this message is harmless)
+Loading E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\UnityEngine.dll into Unity Child Domain
+Platform assembly: E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-CSharp-firstpass.dll (this message is harmless)
+Loading E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-CSharp-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-CSharp.dll (this message is harmless)
+Loading E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-CSharp.dll into Unity Child Domain
+Platform assembly: E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-UnityScript-firstpass.dll (this message is harmless)
+Loading E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\Assembly-UnityScript-firstpass.dll into Unity Child Domain
+Platform assembly: E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\UnityEngine.UI.dll (this message is harmless)
+Loading E:\Created\IanBurnetteLD32\Builds\Final\round2\windows\HerMajestysApathyBombWIN_Data\Managed\UnityEngine.UI.dll into Unity Child Domain
+- Completed reload, in  0.079 seconds
+desktop: 1680x1050 59Hz; virtual: 2960x1050 at -1280,0
+<RI> Initializing input.
+<RI> Input initialized.

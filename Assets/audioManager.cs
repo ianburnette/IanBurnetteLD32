@@ -15,7 +15,9 @@ public class audioManager : MonoBehaviour {
 	void OnLevelWasLoaded(int level){
 		if (Application.loadedLevel == 1) {
 			//slide = GameObject.Find("Slider").GetComponent<Slider>();
-			slide.value = masterAudio;
+			if (slide != null){
+				slide.value = masterAudio;
+			}
 		}
 	}
 	
