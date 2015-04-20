@@ -20,7 +20,7 @@ public class throwBomb : MonoBehaviour {
 		rb.AddForce (Vector3.forward * throwSpeed);
 		rb.AddTorque (Vector3.up * torqueSpeed);
 
-		GetComponent<CameraFacingBillboard> ().enabled = false;
+		//GetComponent<CameraFacingBillboard> ().enabled = false;
 	}
 
 	public void Placed () {

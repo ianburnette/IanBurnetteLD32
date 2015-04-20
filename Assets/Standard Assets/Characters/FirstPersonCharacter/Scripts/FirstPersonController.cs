@@ -59,6 +59,29 @@ namespace UnityStandardAssets.Characters.FirstPerson
 			m_MouseLook.Init(transform , m_Camera.transform);
         }
 
+		public void StartMoving(){
+			m_WalkSpeed = 6f;
+		}
+
+		public void StopMoving(){
+			m_WalkSpeed = 0f;
+		}
+
+		public void ChangePace(float newPace){
+			print ("changed");
+			m_WalkSpeed = newPace;
+		}
+
+		public void StopLook(){
+			m_MouseLook.XSensitivity = 0f;
+			m_MouseLook.YSensitivity = 0f;
+		}
+
+		public void ResumeLook(){
+			m_MouseLook.XSensitivity = 2f;
+			m_MouseLook.YSensitivity = 2f;
+		}
+
 		public void Falling(){
 			m_MouseLook.XSensitivity = .2f;
 			m_MouseLook.YSensitivity = .2f;

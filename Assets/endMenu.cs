@@ -3,6 +3,7 @@ using System.Collections;
 
 public class endMenu : MonoBehaviour {
 
+	public Transform checkpointMaster;
 	public Transform main, credits;
 
 	// Use this for initialization
@@ -15,8 +16,10 @@ public class endMenu : MonoBehaviour {
 	
 	}
 
-	public void TryAgain(){
+	public void TryAgain(int checkpoint){
+		checkpointMaster.GetComponent<CheckpointScript> ().ChooseCheckpoint (checkpoint);
 		Application.LoadLevel (1);
+
 	}
 
 	public void Credits(){

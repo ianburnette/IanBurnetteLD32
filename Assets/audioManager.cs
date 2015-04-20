@@ -12,16 +12,16 @@ public class audioManager : MonoBehaviour {
 		GameObject.DontDestroyOnLoad (gameObject);
 	}
 
-	void OnLevelWasLoaded(){
+	void OnLevelWasLoaded(int level){
 		if (Application.loadedLevel == 1) {
-			slide = GameObject.FindGameObjectWithTag("volumeSlider").GetComponent<Slider>();
+			//slide = GameObject.Find("Slider").GetComponent<Slider>();
 			slide.value = masterAudio;
 		}
 	}
 	
 	// Update is called once per frame
 	void Update () {
-		if (Application.loadedLevel == 0 || Application.loadedLevel == 1) {
+		if (Application.loadedLevel == 0 || Application.loadedLevel == 1 && slide != null) {
 			masterAudio = slide.value;
 		}
 		AudioListener.volume = masterAudio;

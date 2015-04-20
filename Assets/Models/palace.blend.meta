@@ -34,6 +34,29 @@ ModelImporter:
     100052: TOWER_007
     100054: TOWER_008
     100056: TOWER_009
+    100058: doorBase
+    100060: doorFrame
+    100062: doorHinge
+    100064: doorRim
+    100066: doorMain2
+    100068: doorRim2
+    100070: main
+    100072: main_001
+    100074: main_002
+    100076: main_003
+    100078: main_004
+    100080: main_005
+    100082: main_006
+    100084: main_007
+    100086: main_008
+    100088: main_009
+    100090: main_010
+    100092: main_011
+    100094: main_012
+    100096: main_013
+    100098: main_014
+    100100: main_015
+    100102: TOWER_000
     400000: //RootNode
     400002: Cube
     400004: Cube_001
@@ -63,6 +86,29 @@ ModelImporter:
     400052: TOWER_007
     400054: TOWER_008
     400056: TOWER_009
+    400058: doorBase
+    400060: doorFrame
+    400062: doorHinge
+    400064: doorRim
+    400066: doorMain2
+    400068: doorRim2
+    400070: main
+    400072: main_001
+    400074: main_002
+    400076: main_003
+    400078: main_004
+    400080: main_005
+    400082: main_006
+    400084: main_007
+    400086: main_008
+    400088: main_009
+    400090: main_010
+    400092: main_011
+    400094: main_012
+    400096: main_013
+    400098: main_014
+    400100: main_015
+    400102: TOWER_000
     2300000: //RootNode
     2300002: Cube
     2300004: Cube_001
@@ -92,6 +138,29 @@ ModelImporter:
     2300052: TOWER_007
     2300054: TOWER_008
     2300056: TOWER_009
+    2300058: doorBase
+    2300060: doorFrame
+    2300062: doorHinge
+    2300064: doorRim
+    2300066: doorMain2
+    2300068: doorRim2
+    2300070: main
+    2300072: main_001
+    2300074: main_002
+    2300076: main_003
+    2300078: main_004
+    2300080: main_005
+    2300082: main_006
+    2300084: main_007
+    2300086: main_008
+    2300088: main_009
+    2300090: main_010
+    2300092: main_011
+    2300094: main_012
+    2300096: main_013
+    2300098: main_014
+    2300100: main_015
+    2300102: TOWER_000
     3300000: //RootNode
     3300002: Cube
     3300004: Cube_001
@@ -121,6 +190,29 @@ ModelImporter:
     3300052: TOWER_007
     3300054: TOWER_008
     3300056: TOWER_009
+    3300058: doorBase
+    3300060: doorFrame
+    3300062: doorHinge
+    3300064: doorRim
+    3300066: doorMain2
+    3300068: doorRim2
+    3300070: main
+    3300072: main_001
+    3300074: main_002
+    3300076: main_003
+    3300078: main_004
+    3300080: main_005
+    3300082: main_006
+    3300084: main_007
+    3300086: main_008
+    3300088: main_009
+    3300090: main_010
+    3300092: main_011
+    3300094: main_012
+    3300096: main_013
+    3300098: main_014
+    3300100: main_015
+    3300102: TOWER_000
     4300000: Cube
     4300002: Cube_001
     4300004: Cube_002
@@ -149,6 +241,29 @@ ModelImporter:
     4300050: TOWER_008
     4300052: Cube_015
     4300054: TOWER_009
+    4300056: doorRim
+    4300058: doorFrame
+    4300060: doorHinge
+    4300062: doorBase
+    4300064: doorRim2
+    4300066: doorMain2
+    4300068: main
+    4300070: main_005
+    4300072: main_004
+    4300074: main_003
+    4300076: main_002
+    4300078: main_001
+    4300080: main_006
+    4300082: main_007
+    4300084: main_008
+    4300086: main_009
+    4300088: main_010
+    4300090: main_011
+    4300092: main_012
+    4300094: main_013
+    4300096: main_014
+    4300098: main_015
+    4300100: TOWER_000
     6400000: //RootNode
     6400002: Cube_000
     6400004: Cube_002
@@ -177,6 +292,29 @@ ModelImporter:
     6400050: TOWER_007
     6400052: TOWER_008
     6400054: TOWER_009
+    6400056: doorBase
+    6400058: doorFrame
+    6400060: doorHinge
+    6400062: doorRim
+    6400064: doorMain2
+    6400066: doorRim2
+    6400068: main
+    6400070: main_001
+    6400072: main_002
+    6400074: main_003
+    6400076: main_004
+    6400078: main_005
+    6400080: main_006
+    6400082: main_007
+    6400084: main_008
+    6400086: main_009
+    6400088: main_010
+    6400090: main_011
+    6400092: main_012
+    6400094: main_013
+    6400096: main_014
+    6400098: main_015
+    6400100: TOWER_000
     7400000: Default Take
     9500000: //RootNode
   materials:

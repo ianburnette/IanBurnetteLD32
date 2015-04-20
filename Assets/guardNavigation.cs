@@ -17,7 +17,9 @@ public class guardNavigation : MonoBehaviour {
 	void Update () {
 		if (target != null) {
 			nav.destination = target.position;
-			Animate();
+			Animate ();
+		} else {
+			anim.SetBool("moving", false);
 		}
 	}
 

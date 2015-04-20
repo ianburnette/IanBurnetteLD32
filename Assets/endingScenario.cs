@@ -12,6 +12,7 @@ public class endingScenario : MonoBehaviour {
 	public Image fadeScreen;
 	public bool fadeNow;
 	public float increment;
+	public Transform guards;
 
 	// Use this for initialization
 	void Update () {
@@ -52,7 +53,11 @@ public class endingScenario : MonoBehaviour {
 		transform.GetComponent<FirstPersonController>().Falling();
 		bomb.gameObject.SetActive (false);
 		explosion.gameObject.SetActive (true);
-
+		foreach (Transform guard in guards) {
+			guard.GetComponent<guardNavigation>().target=null;
+			guard.GetComponent<NavMeshAgent>().enabled = false;// = 0f;
+			//print (guard.name);
+		}
 	}
 
 	void ResetFade(){
