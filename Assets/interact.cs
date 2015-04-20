@@ -35,12 +35,17 @@ public class interact : MonoBehaviour {
 	}
 
 	void SendMessageToPlayer(){
-		if (transform.name != "placeBomb") {
+		if (transform.name != "placeBomb") { //queen and throw bomb
+			if (transform.name == "throwQueen"){
+				PlayerPrefs.SetInt("sicko", 1);
+			}else if (transform.name == "throwBomb"){
+				PlayerPrefs.SetInt("rubbish", 1);
+			}
 			playerTransform.GetComponent<FirstPersonController> ().Falling ();
 			playerTransform.GetComponent<FirstPersonController> ().StopFootSteps ();
 			playerTransform.GetComponent<endingScenario> ().ReachedEnd (endingClip);
 		} else {
-			guardsToCall.gameObject.SetActive (true);
+			guardsToCall.gameObject.SetActive (true); //place bomb 
 			playerTransform.GetComponent<FirstPersonController> ().StopFootSteps ();
 			playerTransform.GetComponent<endingScenario> ().ReachedEnd (endingClip);
 			playerTransform.GetComponent<endingScenario> ().PlacedBomb();

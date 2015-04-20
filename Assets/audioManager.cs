@@ -23,7 +23,7 @@ public class audioManager : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-		if (Application.loadedLevel == 0 || Application.loadedLevel == 1 && slide != null) {
+		if ((Application.loadedLevel == 0 || Application.loadedLevel == 1) && slide != null) {
 			masterAudio = slide.value;
 		}
 		AudioListener.volume = masterAudio;

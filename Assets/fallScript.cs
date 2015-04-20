@@ -17,15 +17,18 @@ public class fallScript : MonoBehaviour {
 	void OnTriggerEnter (Collider col) {
 		if (col.transform.tag == "Player") {
 			col.transform.GetComponent<FirstPersonController>().Falling();
-			if (transform.name == "UpperParapetSoundZone"){
-				if (player.GetComponent<endingScenario>().listenForEnd){
+			if (transform.name == "UpperParapetSoundZone"){ //fall off upper part
+				if (player.GetComponent<endingScenario>().listenForEnd){ //late
+					PlayerPrefs.SetInt("stupid", 1);
 					col.GetComponent<endingScenario>().FellOff(secondaryFallClip);
-				}else{
+				}else{ //early
+					PlayerPrefs.SetInt("slip", 1);
 					col.GetComponent<endingScenario>().FellOff(primaryFallClip);
 				}
 
 			}
-			else{
+			else{ //balcony
+				PlayerPrefs.SetInt ("symbolic", 1);
 				col.GetComponent<endingScenario>().FellOff(primaryFallClip);
 			}
 		}

@@ -59,6 +59,8 @@ public class endingScenario : MonoBehaviour {
 	}
 
 	void ExplodeBomb(){
+		//print ("
+		PlayerPrefs.SetInt("meh", 1);
 		transform.GetComponent<FirstPersonController>().Falling();
 		bomb.gameObject.SetActive (false);
 		explosion.gameObject.SetActive (true);
